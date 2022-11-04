@@ -1,7 +1,7 @@
 function R = bicubic_resize(I, p, q)
 
     % Scale the image using Bicubic Interpolation
-    % Tranform the image I from size m x n to size p x q
+    % Transform the image I from size m x n to size p x q
 
 
     [m n nr_colors] = size(I);
@@ -55,7 +55,7 @@ function R = bicubic_resize(I, p, q)
             endif
             % Calculate the interpolation coefficients A
             A = bicubic_coef(I,Ix,Iy,Ixy,x1,y1,x2,y2);
-            % Convert (xp, yp) to unit square by substracting (x1, y1)
+            % Convert (xp, yp) to unit square by subtracting (x1, y1)
             x_p -= x1;
             y_p -= y1;
             % Calculate the interpolated value of the (x, y) pixel

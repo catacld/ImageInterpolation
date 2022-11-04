@@ -1,7 +1,7 @@
 function [Ix, Iy, Ixy] = precalc_d(I)
 
     % Precalculate the matrices Ix, Iy and Ixy which contain the derivatives
-    % dx, dy, and dxy of the image I for its every pixel
+    % dx, dy, and dxy of the image I for every pixel
 
 
     % Get the size of the image
