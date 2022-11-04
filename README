@@ -1,0 +1,31 @@
+COPYRIGHT CALDARUSE-MARIUS CATALIN 313CA
+
+TEMA 2 - 2022
+
+
+Avand TODO-uri pentru fiecare pas in parte, implementarea este deja destul de 
+bine explicata, dar voi face, totusi, un rezumat al modului de functionare 
+pentru fiecare interpolare.
+
+INTERPOLARE PROXIMAL
+
+Cautam cel mai apropiat punct cunoscut si aproximam valoarea functiei din
+acesta. Pentru fiecare pixel din noua imagine, aplicam doua interpolari,
+pe axa OX si pe axa OY pentru a determina cel mai apropiat punct din vechea
+imagine, obtinand astfel 4 zone de replicare ale valorilor.
+
+
+INTERPOLARE BICUBICA
+
+Interpolarea Bicubica foloseste functii spline cubice pe doua dimensiuni.
+Se calculeaza cei 16 coeficienti de transformare pentru noua imagine cu
+ajutorul unui sistem de ecuatii,cunoscand valorile functiei, valorile
+derivatelor fata de x si y si valorile derivatei mixte.
+
+
+INTERPOLARE LANCZOS
+
+Multumiri echipei pentru trecerea acestei interpolari ca bonus :D
+
+
+
