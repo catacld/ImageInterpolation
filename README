@@ -1,31 +1,13 @@
-COPYRIGHT CALDARUSE-MARIUS CATALIN 313CA
+PROXIMAL INTERPOLATION
 
-TEMA 2 - 2022
+We look for the nearest known point and approximate the function's value at this point. For each pixel of the new image, two interpolations
+are applied on the OX axis and the OY axis to find the nearest point of the old image.
 
+BICUBIC INTERPOLATION
 
-Avand TODO-uri pentru fiecare pas in parte, implementarea este deja destul de 
-bine explicata, dar voi face, totusi, un rezumat al modului de functionare 
-pentru fiecare interpolare.
-
-INTERPOLARE PROXIMAL
-
-Cautam cel mai apropiat punct cunoscut si aproximam valoarea functiei din
-acesta. Pentru fiecare pixel din noua imagine, aplicam doua interpolari,
-pe axa OX si pe axa OY pentru a determina cel mai apropiat punct din vechea
-imagine, obtinand astfel 4 zone de replicare ale valorilor.
-
-
-INTERPOLARE BICUBICA
-
-Interpolarea Bicubica foloseste functii spline cubice pe doua dimensiuni.
-Se calculeaza cei 16 coeficienti de transformare pentru noua imagine cu
-ajutorul unui sistem de ecuatii,cunoscand valorile functiei, valorile
-derivatelor fata de x si y si valorile derivatei mixte.
-
-
-INTERPOLARE LANCZOS
-
-Multumiri echipei pentru trecerea acestei interpolari ca bonus :D
+Bicubic interpolation uses cubic splines on two dimensions. The 16 transformation coefficients of the new image
+are calculated using a system of equations where the values of the function, the values of the derivates with
+respect to x and y and the values of the mixed derivative are known.
 
 
 
