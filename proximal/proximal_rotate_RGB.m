@@ -8,7 +8,7 @@ function out = proximal_rotate_RGB(img, rotation_angle)
     G = img(:,:,2);
     % Extract the blue channel of the image
     B = img(:,:,3);
-    % Apply rotate on each channel of the image
+    % Apply rotate to each channel of the image
     R = proximal_rotate(R,rotation_angle);
     G = proximal_rotate(G,rotation_angle);
     B = proximal_rotate(B,rotation_angle);
